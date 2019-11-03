@@ -59,6 +59,8 @@ Após fazer todas as ações necessárias é preciso encerrar a conexão atravé
 
 ## Relacionando dados pelas chaves estrangeiras
 
+### Recuperando apenas os dados que interessam
+
 ```bash
 select clientes.nome, produtos.nome FROM compra JOIN produtos, clientes 
 where produtos.codigo = compra.codigoProduto and clientes.id = compra.idCliente;
