@@ -55,7 +55,7 @@ Se ao executar o código SQL houver algum erro então o parametro receberá as i
 
 Após fazer todas as ações necessárias é preciso encerrar a conexão através de:
 
-![Encerrando conexão](docs/conexao-com-DB.PNG)
+![Encerrando conexão](docs/Finalizacao-DB.PNG)
 
 ## Relacionando dados pelas chaves estrangeiras
 
@@ -65,23 +65,19 @@ Após fazer todas as ações necessárias é preciso encerrar a conexão atravé
 select clientes.nome, produtos.nome FROM compra JOIN produtos, clientes 
 where produtos.codigo = compra.codigoProduto and clientes.id = compra.idCliente;
 ```
+## Se você baixar este projeto
 
-## Install the dependencies
+### Instalando as dependências
 ```bash
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Iniciar a aplicação no modo de desenvolvimento
 ```bash
 quasar dev
 ```
 
-### Lint the files
-```bash
-npm run lint
-```
-
-### Build the app for production
+### Construir aplicação para produção
 ```bash
 quasar build
 ```
